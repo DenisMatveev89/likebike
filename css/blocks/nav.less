@@ -1,0 +1,50 @@
+//main: ../style.less
+.nav{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+.logo{
+    display: flex;
+        cursor: pointer;
+}
+.mainmenu{
+    text-align: center;
+    min-width: 600px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.nav-link{
+    font-family: 'lato';
+    font-weight: 600;
+    font-size: 15px;
+    display: inline-block;
+    color: #333;
+    margin-right: .5rem;
+    margin-left: .5rem;
+    cursor: pointer;
+    
+    &:hover{
+        border-bottom: 1px solid @black;
+    }
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    min-width: 160px;
+}
+
+.linkcall{
+    margin-top: 5px;    
+    font-size: 14px;
+}
+.tel{
+    font-size: 15px;
+    font-weight: 600;
+    color: @black;
+}

@@ -1,0 +1,49 @@
+// comress: true
+@import "vars";
+html{
+    font-family: 'lato';
+	font-size: 18px;
+}
+
+body {
+	margin: 0;
+	font-family: 'lato';
+	font-size: 18px;
+	color: @black;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: @black;
+}
+p{
+    margin: 4px;
+}
+
+*,
+*:before,
+:after {
+	box-sizing: border-box;
+}
+
+/* blocks */
+@import "blocks/header";
+@import "blocks/container";
+@import "blocks/nav";
+@import "blocks/main";
+@import "blocks/offer";
+@import "blocks/advantage";
+@import "blocks/payment";
+@import "blocks/reviews";
+@import "blocks/steps";
+@import "blocks/callback";
+@import "blocks/modal__callback";
+@import "blocks/success";
+@import "blocks/footer";
+@import "blocks/wraper";
+@import "blocks/main-form";
+@import "blocks/buttons";

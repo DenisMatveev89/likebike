@@ -1,12 +1,32 @@
 //main: ../style.less
-.fixed{
-    position: fixed;
-    z-index: 1000;
-}
 
 .header{
-    background-color: @white;
     width: 100%;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    height: 68px;
+    top: 0;
+    left: 0;
+/*НАЛОЖЕНИЕ СО СМЕЩЕНИЕМ*/
+    z-index: 1000; 
+    position: absolute;
+    background-color: @white;
+}
+
+.header.fixed {
+    height: auto;
+    position: fixed;
+    background-color: @white;
+}
+.header.fixed .header_inner{
+    padding: 15px 0;
+    border-bottom: 0;
+}
+
+.header__inner{
+    display: flex;
+    /*пустое место между лого и меню*/
+    justify-content: space-between;
+    align-items: center;/*все объекты делаем по центру*/
+   
+}
+.header__inner__logo{
+
 }

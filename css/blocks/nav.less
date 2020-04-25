@@ -1,23 +1,10 @@
 //main: ../style.less
 .nav{
-    display: flex;
     align-items: center;
-    flex-wrap: nowrap;
     justify-content: space-between;
-    padding-left: 7rem;
-    padding-right: 7rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
-.logo{
-    display: flex;
-        cursor: pointer;
-}
-.mainmenu{
-    text-align: center;
-    min-width: 600px;
-    margin-left: 3rem;
-    margin-right: 3rem;
-}
-
 .nav-link{
     font-family: 'lato';
     font-weight: 600;
@@ -27,14 +14,15 @@
     margin-right: .5rem;
     margin-left: .5rem;
     cursor: pointer;
+    border-bottom: 2px solid @white;
+    transition: border-bottom 0.3s linear;
     
     &:hover{
-        border-bottom: 1px solid @black;
+        border-bottom: 2px solid @sblack;
     }
 }
 
 .contact{
-    display: flex;
     flex-direction: column;
     min-width: 160px;
 }

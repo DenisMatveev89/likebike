@@ -1,0 +1,38 @@
+//main: ../style.less
+/* sm-размер (<=1200px) */
+@media (max-width: 960px) { 
+    .intro{
+        padding-top: 130px;
+        padding-bottom: 30px;
+    }
+    .intro__title{
+        font-size: 35px;
+    }
+    .intro__bike{
+        display: none;
+    }
+    .main-form{
+        position: inherit;
+        max-width: none;
+        background: rgba(64, 28, 10, 0.2);
+    }
+    .burger{
+        display: block;
+    }
+    .nav{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: right;
+        background-color: #31354f;
+        position: absolute;
+        top: 100%;
+        right: 0;
+    }
+    .nav.show{
+        display: flex;
+    }
+    .contact{
+        display: none;
+    }
+}

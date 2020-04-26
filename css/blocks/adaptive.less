@@ -1,6 +1,6 @@
 //main: ../style.less
-/* sm-размер (<=1200px) */
-@media (max-width: 960px) { 
+
+@media screen and (max-width: 960px) { 
     .intro{
         padding-top: 130px;
         padding-bottom: 30px;
@@ -24,10 +24,21 @@
         flex-direction: column;
         width: 100%;
         text-align: right;
-        background-color: #31354f;
+        background-color: @white;
+        opacity: .9;
         position: absolute;
         top: 100%;
         right: 0;
+    }
+    .nav-link{
+        font-weight: 400;
+        font-size: 20px;
+        display: inline-block;
+        color: @sblack;
+        margin-top: 20px;
+        cursor: pointer;
+        border-bottom: 2px solid @white;
+        
     }
     .nav.show{
         display: flex;
@@ -35,4 +46,45 @@
     .contact{
         display: none;
     }
+    .reviews__inner__autor{
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 35px;
+        margin-bottom: .8rem;
+    }
 }
+
+@media screen and (max-width: 880px) { 
+    .intro__title{
+        font-size: 30px;
+    }
+    .offer__inner-block{
+        max-width: 350px;
+    }
+    .payment__subtitle{
+        font-size: 20px
+    }
+    .form-name2{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) { 
+    .reviews__inner__text{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) { 
+    .reviews__inner__text{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 320px) { 
+    .reviews__inner__text{
+        font-size: 10px;
+    }
+}
+
+

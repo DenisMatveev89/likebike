@@ -1,23 +1,22 @@
 //main: ../style.less
 .offer{
     display: flex;
-    background-color: @gray;
-    padding-top: 50px;   
+    background-color: @gray;  
 }
 .offer__title{
     text-align: center;
     font-size: 35px;
     font-weight: 600;
-    margin: 2rem 0;
     color: @sblack;
 
 }
 .offer__inner{
     display: flex;
-    width: 1200px;
     flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: row;
+    max-width: 950px;
+        margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
 
 }
 .offer__inner-img{
@@ -39,13 +38,12 @@
 
 }
 .offer__inner-block{
-    
     display: flex;
     flex-wrap: wrap;
-    width: 450px;
+    max-width: 420px;
     background-color: @white;
-    margin-bottom: .7rem;
+    margin: 10px 10px;
     border-radius: 5px;
     overflow: hidden;
-
+    
 }

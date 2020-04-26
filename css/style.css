@@ -126,6 +126,7 @@ p {
   height: 750px;
   background: url(/img/section-main.jpg) center no-repeat;
   padding-top: 100px;
+  background-color: #f8f9f4;
 }
 .intro__title {
   text-align: center;
@@ -207,7 +208,7 @@ p {
 .burger_item {
   display: block;
   width: 30px;
-  height: 3px;
+  height: 2px;
   font-size: 0;
   background-color: #000;
   position: relative;
@@ -256,8 +257,168 @@ p {
   position: relative;
   margin: 0 auto;
 }
-/* sm-размер (<=1200px) */
-@media (max-width: 960px) {
+.offer {
+  display: flex;
+  background-color: #f8f9f4;
+}
+.offer__title {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+  color: #000;
+}
+.offer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+.offer__inner-img {
+  height: 200px;
+}
+.offer__inner-title {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #000;
+  padding: 1rem 1.2rem;
+}
+.offer__inner-text {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #000;
+  padding: 0 1.2rem;
+}
+.offer__inner-block {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 420px;
+  background-color: #fff;
+  margin: 10px 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.advantage {
+  display: flex;
+}
+.advantage__inner {
+  display: flex;
+  max-width: 950px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.advantage__inner-img {
+  width: 45px;
+  height: 45px;
+}
+.advantage__inner-block {
+  display: flex;
+  width: 470px;
+}
+.advantage__inner-block__content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0 10px 30px;
+  margin-bottom: 4rem;
+}
+.advantage__title {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+  margin: 4rem 0;
+  color: #000;
+}
+.advantage__inner-block__title {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #000;
+}
+.advantage__inner-block__text {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #000;
+}
+.payment {
+  background-color: #f8f9f4;
+  height: 800px;
+}
+.payment__title {
+  font-weight: 600;
+  font-size: 35px;
+  color: #000;
+  text-align: center;
+  padding: 80px 0 22px 0;
+}
+.payment__subtitle {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 100;
+  line-height: 35px;
+  margin-bottom: 15px;
+}
+.payment__inner {
+  display: flex;
+  max-width: 600px;
+  margin-bottom: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.payment__inne-logo {
+  margin-right: 2rem;
+}
+.payment__inne-text {
+  line-height: 27px;
+  font-size: 18px;
+}
+.reviews {
+  background: url("/img/section-review.jpg") no-repeat center bottom;
+  height: 600px;
+  padding-top: 90px;
+}
+.reviews__title {
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  font-size: 35px;
+}
+.reviews__inner {
+  display: flex;
+  flex-direction: column;
+  width: 33.33333%;
+  padding: 1rem;
+}
+.reviews__inner__autor {
+  color: #fff;
+  font-family: 'lato';
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 35px;
+  margin-bottom: 0.8rem;
+}
+.reviews__inner__city {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 0.8rem;
+  font-weight: 100;
+}
+.reviews__inner__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ccc;
+}
+.reviews__slider {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 950px;
+  justify-content: center;
+}
+@media screen and (max-width: 960px) {
   .intro {
     padding-top: 130px;
     padding-bottom: 30px;
@@ -281,15 +442,60 @@ p {
     flex-direction: column;
     width: 100%;
     text-align: right;
-    background-color: #31354f;
+    background-color: #fff;
+    opacity: 0.9;
     position: absolute;
     top: 100%;
     right: 0;
+  }
+  .nav-link {
+    font-weight: 400;
+    font-size: 20px;
+    display: inline-block;
+    color: #000;
+    margin-top: 20px;
+    cursor: pointer;
+    border-bottom: 2px solid #fff;
   }
   .nav.show {
     display: flex;
   }
   .contact {
     display: none;
+  }
+  .reviews__inner__autor {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 35px;
+    margin-bottom: 0.8rem;
+  }
+}
+@media screen and (max-width: 880px) {
+  .intro__title {
+    font-size: 30px;
+  }
+  .offer__inner-block {
+    max-width: 350px;
+  }
+  .payment__subtitle {
+    font-size: 20px;
+  }
+  .form-name2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .reviews__inner__text {
+    font-size: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .reviews__inner__text {
+    font-size: 13px;
+  }
+}
+@media (max-width: 320px) {
+  .reviews__inner__text {
+    font-size: 10px;
   }
 }
